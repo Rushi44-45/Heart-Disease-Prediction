@@ -16,7 +16,7 @@ st.set_page_config(page_title="Heart Health AI", layout="centered")
 
 # App Header
 st.title("❤️ Heart Failure Prediction AI")
-st.write("Patient chi mahiti bhara ani clinical outcome check kara.")
+st.write(" fill the Patient info and chech clinical outcome.")
 st.divider()
 
 # 2. User Friendly Input Form
@@ -31,7 +31,7 @@ with st.form("main_form"):
         diabetes = st.selectbox("Diabetes?", [0, 1], format_func=lambda x: "Yes" if x == 1 else "No")
         anaemia = st.selectbox("Anaemia (Raktakshay)?", [0, 1], format_func=lambda x: "Yes" if x == 1 else "No")
         hbp = st.selectbox("High Blood Pressure?", [0, 1], format_func=lambda x: "Yes" if x == 1 else "No")
-        smoking = st.selectbox("Smoking Savay aahe?", [0, 1], format_func=lambda x: "Yes" if x == 1 else "No")
+        smoking = st.selectbox("Smoke?", [0, 1], format_func=lambda x: "Yes" if x == 1 else "No")
 
     with col2:
         ef = st.number_input("Ejection Fraction (%)", 0, 100, 38)
